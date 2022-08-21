@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            borderについて
+        </title>
+    </head>
+    <body>
+        <h1>border-style</h1>
+        <p>■h1要素に枠線をつける■</p>
+        <strong class="red_color">
+        border：~；<br>
+        ...枠線を指定するプロパティ。～(値)には、太さ・線の種類・色指定が入る。
+        </strong class="red_color">
+        <p>
+            例：<br>
+            border: 3px(線の太さ) solid(線の種類) #ffffff(色指定);<br>
+            太さ3pxの白い枠線がつく！
+        </p>
+        <p>■指定した枠線の角を丸くする■</p>
+        <strong class="red_color">
+        border-radius(ボーダー レイディウス)：~；<br>
+        ...角丸を指定するプロパティ。ボックスや画像の四隅の丸みを一括で指定する。～(値)には単位を伴う数値が入る。
+        </strong class="red_color">
+        <p>
+            例：<br>
+            border-radius: 20px;<br>
+            枠線の四隅が丸くなり、やわらかい印象になる。
+        </p>
+        <p class="green_color">
+            よく使用する線の種類（border-style）の値：
+            solid(実線), double(二重線), dotted(点線), dashed(破線)
+        </p class="green_color">
+        <p>
+            ■任意の辺のborder個別に指定することができる■<br>
+            例：<br>
+            border-top: px(太さ) style(種類) #(色);<br>
+            border-left: px(太さ) style(種類) #(色);<br>
+            border-right: px(太さ) style(種類) #(色);<br>
+            border-bottom: px(太さ) style(種類) #(色);
+        </p>
+        <p>
+            <strong>borderはコレだけ覚えればOK!</strong><br>
+            ▶ ショートハンド<br>
+            ショートハンドはCSSのプロパティをまとめる書き方で、いくつかのCSSプロパティでは、ショートハンドの書き方ができる！！！！<br>
+            ↓ショートハンドの書き方↓<br>
+            【太さ】border-width: 3px<br>
+            【種類】border-style: solid<br>
+            【色】border-color: #ffffff<br>
+            ↑この3つのプロパティをまとめて指定すると...<br>
+            <strong class="red_color">border: 3px(線の太さ) solid(線の種類) #ffffff(線の色);</strong>
+            ※値は半角スペースで区切り、順番は自由。
+        </p>
+        <a href="./index.html">前に戻る</a>
+        <style>
+            body {
+                font-size: 18px;
+            }
+            .red_color {
+                color: red;
+                font-size: 23px;
+                font-weight: bold;
+            }
+            .yellow_color {
+                color: yellow;
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .green_color {
+                color: green;
+                font-size: 18px;
+                font-weight: bold;
+            }
+        </style>
+    </body>
+</html>

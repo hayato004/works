@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>divタグとspanタグ</title>
+        <link rel="stylesheet" href="../css/style.css/divspan.css">
+    </head>
+    <body>
+        <h1>意味を持たないdivタグとspanタグについて</h1>
+        <p>
+            マークアップしたタグだけではCSSを適用するための要素が足りない場合がある。<br>
+            そんなときに使うのが以下のような意味を持たないタグです。
+        </p>
+            <h2>意味を持たないHTMLタグ</h2>
+        <p>
+            文章構造に影響を与えずにHTMLをグループ化することができ、<mark>CSSによる装飾目的で使われます。</mark>
+        </p>
+        <p>
+            ■divタグ<br>
+            <strong class="green">&lt;div&gt;～&lt;/div&gt;</strong><br>
+            複数のブロックをグループ化するときに使い、<strong class="green">ブロックボックス</strong>を生成する。<br>
+            例：<br>
+            <mark class="mark_green">&lt;div&gt;</mark><br>
+            &lt;section&gt;<br>
+            &lt;h1&gt;テキスト&lt;/h1&gt;&lt;p&gt;テキスト&lt;/p&gt;<br>
+            &lt;/section&gt;<br>
+            <mark class="mark_green">&lt;/div&gt;</mark>
+        </p>
+        <p>
+            ■spanタグ<br>
+            <strong class="red">&lt;span&gt;～&lt;/span&gt;</strong><br>
+            テキストの一部にスタイルを適用するときに使い、<strong class="red">インラインボックス</strong>を生成する。<br>
+            例：<br>
+            &lt;h1&gt;<br>
+            &lt;p&gt;<br>
+            テキストの<mark class="mark_red">&lt;span&gt;</mark>一部<mark class="mark_red">&lt;/span&gt;</mark>です<br>
+            &lt;/p&gt;<br>
+            &lt;/h1&gt;
+        </p>
+    </body>
+</html>

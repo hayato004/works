@@ -1,0 +1,32 @@
+body {
+    background-color: #ffceeb;
+}
+h1 {
+    text-align: center;
+    width: 300px;
+    margin: 20px auto;
+    padding: 6px 0;
+    border: 3px double #ff0022;
+    background-color:#ffffff;
+    font-family: "Verdana", "Hiragino Sans", "Meiryo", "sans-serif";
+    font-size: 30px;
+}
+h2 {
+    font-family: "Verdana", "Hiragino" "Sans, Meiryo", "sans-serif";
+    font-size: 18px;
+}
+h2,p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+ul {
+    text-align: center;
+    margin-bottom: 20px;
+    list-style: none;
+}
+body ul li a:hover {
+    text-decoration: underline double;
+}
+body h2 a:hover {
+    text-decoration: underline double;
+}

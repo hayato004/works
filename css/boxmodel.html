@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>余白とか色々</title>
+    </head>
+    <body>
+        <h1>ボックスモデルについて</h1>
+        <p>HTMLでマークアップされたコンテンツは四角い領域を持つようになります。<br>
+        ボックスモデルとは、この四角い領域を構成する<mark>6つのCSSプロパティ(content・width・height・border・padding・margin)</mark>がどのようにボックスを形成しているかという概念です。<br>
+        【content】内容【border】境界線<br>
+        【width】ボックスの横幅【height】ボックスの縦幅<br>
+        【padding】境界線の内側の余白【margin】境界線外側の余白・ほかのボックスとの距離
+    </p>
+    <img src="../images/img_css_boxmodel.png" alt="ボックスモデルの画像"><br>
+    <strong class="red">padding(パディング)：~；</strong class="red"><br>
+    <p>要素の内側の余白を指定するプロパティ。<br>
+        4辺の内側の余白を一括で指定できる。～(値)には単位を伴う数値が入る。<br>
+        例：<br>
+        padding: 6px 0;<br>
+        h1要素の枠線と文字の間に余白を作るためにpaddingプロパティを指定する。<mark>(文字の上下に余白が付く。)</mark>
+    </p>
+    <strong class="red">margin(マージン)：~；</strong class="red">
+        <p>要素の外側の余白を指定するプロパティ。(paddingの反対。)<br>
+            4辺の外側の余白を一括で指定できる。～(値)には単位を伴う数値が入る。<br>
+            例：<br>
+            margin: 20px 0;<br>
+            h1要素の外側に余白をつけるためにmarginプロパティを指定する。
+        </p>
+        <h2>~marginとpaddingの効率的な書き方~</h2>
+        <p>
+            marginとpaddingは書き方が同じなのでセットで覚えると効率の良いプロパティです。この2つともショートハンドで書くことができます。<br>
+            書き方の順番は上下左右ではなく<strong>時計回り</strong>で書くこと。
+        </p>
+        <p>
+            例：<br>
+            margin (paddingも書き方は同じ)<br>
+        </p>
+        <p>
+            <mark class="blue">上下左右</mark class="blue">の値が同じ(4辺が10px)<br>
+            margin: <mark class="blue">10px(上下左右)</mark class="blue">;<br>
+        </p>
+        <p>
+            <mark class="blue">上下</mark class="blue">と<mark class="pink">左右</mark class="pink">で値が同じ(上下10px,左右5px)<br>
+            margin: <mark class="blue">10px(上下)</mark class="blue"> <mark class="pink">5px(左右)</mark class="pink">;<br>
+        </p>
+        <p>
+            <mark class="pink">左右</mark class="pink">が同じで<mark class="blue">上</mark class="blue"><mark class="yellow">下</mark class="yellow">の値が違う<br>
+            margin: <mark class="blue">10px(上)</mark class="blue"> <mark class="pink">5px(左右)</mark class="pink"> <mark  class="yellow">2px(下)</mark class="yellow">;<br>
+        </p>
+        <p>
+            <mark class="blue">上</mark class="blue"><mark class="yellow">下</mark class="yellow"><mark class="green">左</mark class="green"><mark class="pink">右</mark class="pink">ですべて値が違う<br>
+            margin: <mark class="blue">10px(上)</mark class="blue"> <mark class="pink">8px(右)</mark class="pink"> <mark class="yellow">2px(下)</mark class="yellow"> <mark class="green">5px(左)</mark class="green">
+        </p>
+        <p>
+            上下左右の余白を個別に設定することもでき、その場合は以下のような書き方をする。<br>
+            例：<br>
+            上の余白<br>
+            <mark class="blue">margin-top: 10px;</mark class="blue"><br>
+            <mark class="pink">padding-top: 10px;</mark class="pink"><br>
+            右の余白<br>
+            <mark class="blue">margin-right: 10px;</mark class="blue"><br>
+            <mark class="pink">padding-right 10px;</mark class="pink"><br>
+            下の余白<br>
+            <mark class="blue">margin-bottom: 10px;</mark class="blue"><br>
+            <mark class="pink">padding-bottom: 10px;</mark><br>
+            左の余白<br>
+            <mark class="blue">margin-left: 10px;</mark><br>
+            <mark class="pink">padding-left: 10px;</mark><br>
+        </p>
+        <a href="./index.html">前に戻る</a>
+        <style>
+            strong {
+                color: red;
+            }
+            .red {
+                color: red;
+                font-size: 25px;
+                font-weight: bold;
+            }
+            .blue {
+                background-color: rgb(130, 149, 255);
+            }
+            .pink {
+                background-color: rgb(255, 190, 212);
+            }
+            .yellow {
+                background-color: rgb(255, 255, 147);
+            }
+            .green {
+                background-color: rgb(144, 199, 122);
+            }
+        </style>
+    </body>
+</html>

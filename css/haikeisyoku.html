@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            CSSの背景色について
+        </title>        
+    </head>
+    <body>
+        <p>カラーコードの指定<br>
+            &lt;background-color:~;&gt;(バックグラウンドカラー)</p>
+        <p>カラーコードの指定の例<br>
+        #64(R)bd(G)b2(B)...16進数で指定。先頭に#をつける</p>
+        <p>RGBA指定(透明度あり)の例<br>
+        <p>rgba(100,189,178,0.7)...10進数で指定(0~255まで)<br>
+        RGBAの各値を,(カンマ)で区切る。<br>
+    透明度は0.7なら70%という意味になる。</p>
+    <p>どちらの指定方法でも大丈夫だが、透明度を表現したいときは「RGBA」を使う。pinkのように色の名前での指定も可能。</p>
+    <p class="red_color bold big_font">ページ全体に反映したいCSSはbodyに指定する</p>
+    <p>body要素にCSSを指定すると、body要素内の子要素にcssを継承できる。背景色の指定や、フォント指定などページ全体で共通の設定をしたいプロパティは、body
+        セレクタに書くと効率的。</p>
+        <a href="./index.html">前に戻る</a>
+    <style>
+        .red_color{
+            color: rgba(255, 0, 0, 1);
+        }
+    </style>
+    </body>
+</html>

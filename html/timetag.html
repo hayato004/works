@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            time要素の属性の書き方
+        </title>
+    </head>
+    <body>
+        <h1>time要素の属性の書き方</h1>
+        <p>
+            time要素は多くの場合、<strong class="red">datetime属性</strong>を伴います。<br>
+            datetime属性には、<strong class="red">コンピューターが読み取れる形式</strong>で日付・時刻を書きます。
+        </p>
+        <p>
+            例：2022年3月25日12時3分の場合<br>
+            &lt;time <strong class="red">datetime="2022-03-25T12:03"</strong>&gt; 2022年3月25日12時3分&lt;/time&gt;<br>
+            省略形での指定も可能。<br>
+            年のみ：2022<br>
+            年・月：2022-03<br>
+            月・日：03-25<br>
+            時刻のみ：12:03<br>
+            週：2022-W<br>
+            年・月・日に-(ハイフン)、時刻は:(コロン)を挟むことで、コンピューターが読み取れる形式になる。<br>
+            「日付」と「時刻」を続けて書く場合は、間に<strong class="red">大文字のT</strong>を入れる。<br>
+            年月・月日・時刻のみという省略形での指定もできる。
+        </p>
+        <p>
+            <h2>書き方について</h2>
+            <strong class="red">&lt;time datetime="2022-03-25T12:03"&gt;</strong><br>
+            2022年3月25日12時3分<mark>(←投稿日時に日本語が混ざっているため、datetime属性も付与する。)</mark><br>
+            <strong class="red"></strong>&lt;/temi&gt;
+        </p>
+        <p>
+            <h2>datetime属性についてのまとめ・おさらい</h2>
+            ■&lt;time&gt;タグでマークアップするテキストが<mark>「コンピューターが読み取れる形式」</mark>であればdatetime属性は<strong class="red">省略できる。</strong><br>
+            ■<strong>日付や日時の表記をすべて&lt;temi&gt;タグでマークアップるる必要はない。</strong><br>
+            記事の投稿日時やイベントの開催日など、<strong class="red">日時が重要な意味を持つ場合</strong>に使用する。
+        </p>
+        <a href="./site_kuwake.html">前に戻る</a>
+        <style>
+            body {
+                font-size: 18px;
+            }
+            .red {
+                color: red;
+                font-size: 23px;
+                font-weight: bold;
+            }
+        </style>
+    </body>
+</html>

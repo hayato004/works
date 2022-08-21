@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>投稿内の画像をマークアップ</title>
+    </head>
+    <body>
+        <h1>写真・グラフ・コードなどのまとまりをあらわすタグ</h1>
+        <p>
+            <strong class="red">
+                &lt;figure&gt;<br>
+                &lt;figcaption&gt;～&lt;/figcaption&gt;<br>
+                &lt;/figure&gt;<br>
+            </strong><br>
+            <strong>
+                注意：マークアップしたエリアは自己完結している必要があります。<br>
+                &lt;figcaption&gt;タグでキャプション(説明文)を付与できますが、必須ではない。<br>
+            </strong>
+        </p>
+        <p>
+            <h2>説明文付きの画像をマークアップし直す</h2>
+            ■例：ラーメンのイメージ画像を&lt;figure&gt;タグと&lt;figcaption&gt;タグでマークアップし直す。<br>
+            ↓マークアップし直す前<br>
+            <strong>
+                &lt;p&gt;<br>
+                &lt;img src="おいしそうなラーメンの画像" alt="〇〇ラーメンのイメージ画像"&gt;<br>
+                〇〇ラーメン〇〇店で食べたラーメン<br>
+                &lt;/p&gt;</strong><br>
+            ↓マークアップ後<br>
+            <strong>
+                &lt;figure&gt;<br>
+                &lt;img src="おいしそうなラーメンの画像" alt="〇〇ラーメンの画像"&gt;<br>
+                &lt;figcaption&gt;〇〇ラーメン〇〇店で食べたラーメン&lt;/figcaption&gt;<br>
+                &lt;/figure&gt;<br>
+            </strong>
+            ①&lt;p&gt;タグでマークアップされていた部分を&lt;figure&gt;タグと&lt;figcaption&gt;タグでマークアップし直す。<br>
+            このとき、figure要素は自己完結型のコンテンツになり。「段落 (p要素) 」ではなくなるため、&lt;p&gt;タグとの入れ替わりになります。<br>
+            ②結果、画像とキャプション(説明文)が&lt;figure&gt;タグでマークアップされる。
+        </p>
+        <p>
+            <h2>figure要素の「自己完結している」の意味</h2>
+            <strong>
+                本文に関係のないイメージ写真は&lt;figure&gt;タグはマークアップできない。<br>
+                本文と画像の関係性によって&lt;figure&gt;タグでマークアップができるかできないかが決まる。
+            </strong>
+        </p>
+        <p>
+            <strong class="red">figure要素に該当するもの</strong><br>
+            ■本文内では画像について言及していない<br>
+            画像がなくても、本文に影響を与えないので画像が自己完結していると言えます。<br>
+            ■本文に関係のある画像
+            ラーメンのイメージ写真に対して、そのラーメンの説明をしているもの。
+        </p>
+        <p>
+            <strong class="blue">figure要素に該当しない</strong><br>
+            ■本文で「下の画像のように」と言及している<br>
+            画像がないと本文の意味が通じなくなってしまうようなものにはマークアップすることができない。<br>
+            ■本文に直接関係がないイメージ画像<br>
+            装飾が目的の場合はCSSで配置することもある。
+        </p>
+        <a href="./index.html">前に戻る</a>
+        <style>
+            strong {
+                font-weight: bold;
+            }
+            .red {
+                color: red;
+                font-weight: bold;
+            }
+            .blue {
+                color: blue;
+                font-weight: bold;
+            }
+        </style>
+    </body>
+</html>

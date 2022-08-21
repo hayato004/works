@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>装飾編</title>
+        <link rel="stylesheet" href="../css/style.css/text-decoration.css">
+    </head>
+    <body>
+        <h1>マウスカーソルをあてた時(マウスオーバー)の装飾</h1>
+        <h2>マウスカーソルをあてた時(マウスオーバー)の装飾を変える</h2>
+        <p>
+            ■<strong>テキストの傍線を一括指定するプロパティ</strong><br>
+            <strong class="red">text-decoration:～;</strong><br>
+            値(～の部分)には位置・線の種類・色指定・線の太さが入る。<br>
+            カーソルをあてた時の指定は:hoverという疑似クラスを使う。
+        </p>
+        <p>
+            <strong>
+             例：<br>
+            header nav ul li a:hover {<br>
+            text-decoration: underline double;<br>
+            }<br>
+        </p>
+        <p>
+            意味：<br>
+            header内のnav内のul要素のliのみ、マウスオーバー(カーソルを合わせた時に)下二重線が出るようにする。
+            </strong>
+        </p>
+        <h2>text-decorationのショートハンドの書き方</h2>
+        <p>
+            text-decorationはテキストに適用する傍線の位置・種類・色を一括で指定ができる。<br>
+            ■ショートハンドの書き方<br>
+            <strong>
+                text-decoration:<mark class="mark_pink">underline(線の位置)</mark> <mark class="mark_green">double(線の種類)</mark> <mark class="mark_yellow">#ed7a92(線の色)</mark> <mark class="mark_purple">2px(線の太さ)</mark>;
+            </strong><br>
+            ・値は半角スペースで区切る！！<br>
+            ・順番は自由！！
+        </p>
+        <h2>線の位置に指定できる値</h2>
+        <p>
+            <strong>underline(下線)</strong><br>
+            <strong>overline(上線)</strong><br>
+            <strong>line-through(取り消し線)</strong><br>
+            <strong>none(線無し)</strong>
+        </p>
+        <h2>線の種類に指定できる値</h2>
+        <p>
+            <strong>solid(実線)</strong><br>
+            <strong>double(二重線)</strong><br>
+            <strong>dotted(点線)</strong><br>
+            <strong>dashed(破線)</strong><br>
+            <strong>wavy(波線)</strong><br>
+        </p>
+        <strong class="red">線の位置以外は省略可能。省略すると、種類はsolid(実線)、色は文字色と同じになり、太さはブラウザ依存になる。</strong><br>
+        <a href="../css/index.html">←前に戻る</a>
+    </body>
+</html>

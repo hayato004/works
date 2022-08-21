@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>インターネットサイトの区分けについて</title>
+    </head>
+    <body>
+        <h1>インターネットサイトの区分けについて</h1>
+        <a href="./blogsitehtml.html" target="_blank">参照</a>
+        <h2>区分けその1</h2>
+        <p>
+            ■ヘッダーエリアをあらわすタグ
+            <strong class="red">&lt;header&gt;～&lt;/header&gt;</strong><br>
+            ロゴ部分(&lt;h1&gt;)から指定する。<br>
+            導入部分を意味する。<br>
+            文書情報を書く。
+        </p>
+        <p>
+            ■ナビゲーションエリアを区分け
+            <strong class="red">&lt;nav&gt;～&lt;/nav&gt;</strong><br>
+            ページ内の主要なナビゲーションに使う。<br>
+            グローバルナビゲーション部分のコード(&lt;ul&gt;要素)を<strong class="red">&lt;nav&gt;タグ</strong>で囲む。<br>
+            例：<br>
+            <strong class="red">&lt;nav&gt;</strong><br>
+            <strong class="blue">
+                &lt;ul&gt;<br>
+                &lt;li&gt;・HOME&lt;li&gt;<br>
+                &lt;li&gt;・ABOUT&lt;li&gt;<br>
+                &lt;li&gt;・BLOG&lt;li&gt;<br>
+                &lt;ul&gt;<br>
+            </strong>
+            <strong class="red">&lt;/nav&gt;</strong><br>
+            上のHOME、ABOUT、BLOGの3つはハイパーリンクで、上の3つを囲んだナビゲーション部分は<strong class="red">navエリア</strong>になる。
+        </p>
+        <h2>区分けその2</h2>
+        <p>
+            ■メインのコンテンツのエリアをあらわすタグ
+            <strong class="red">&lt;main&gt;～&lt;/main&gt;</strong><br>
+            そのページの主題となる箇所に<mark class="yellow">1回だけ使う。</mark><br>
+            大体のデザインでは、記事部分がメインエリアとなる。<br>
+            記事を内包するように、&lt;main&gt;タグで囲む。
+        </p>
+        <p>
+            ■自己完結しているエリアをあらわすタグ
+            <strong class="red">&lt;article&gt;～&lt;/article&gt;</strong><br>
+            記事タイトル(h2要素)から最後の文章までを内包するように&lt;article&gt;で囲む。<br>
+            ニュースサイトやブログにおける記事などに使われる見出し&lt;h1&gt;～&lt;h6&gt;を伴うことが望ましい。<br>
+            <strong>&lt;article&gt;タグはどんな時に使うのか?</strong><br>
+            articleは、「記事」という意味の英単語であるが、記事以外でも<strong class="red">「自己完結している要素」</strong>をマークアップするのにも利用できる。<br>
+            <strong class="red">「自己完結している要素」</strong>の意味は、<mark>それ以外の要素が無くても意味が通じる</mark>という意味。<br>
+            例えば、TwitterやInstagramなどの1つ1つの投稿は、検索結果やブログなど色々な場所に表示されても意味が通じる（<strong class="red">自己完結している要素</strong>)ので、&lt;article&gt;タグでマークアップすることができる。
+        </p>
+        <p>
+            ■補足情報のエリアをあらわすタグ
+            <strong class="red">&lt;aside(アサイド)&gt;～&lt;/aside(アサイド)&gt;</strong><br>
+            広告・関連リンク・コラムなど省略してもメインコンテンツの意味が分かる補足情報をあらわす。<br>
+            サイドバーに該当する部分は補足情報になるので&lt;aside(アサイド)&gt;タグで囲む。<br>
+        </p>
+        <p>
+            ■フッターエリアをあらわすタグ
+            <strong class="red">&lt;footer(フッター)&gt;～&lt;/footer(フッター)&gt;</strong><br>
+            「foot」が由来で最下部を意味する。<br>
+            <mark class="mark_green">
+                著作権や著作者に関する情報が含まれることが多い。<br>
+                著作権表示の部分を&lt;footer&gt;タグで囲む。
+            </mark>
+        </p>
+        <p>
+            ■セクションエリアをあらわすタグ
+            <strong class="red">&lt;section&gt;～&lt;/section&gt;</strong><br>
+            見出しとそのあとに続く段落などを囲む。<br>
+            見出し&lt;h1&gt;～&lt;h6&gt;を伴うことが多い。<br>
+            <strong>&lt;section&gt;タグは見出しと一緒に使用し、見出しと同じ話題のエリアを囲む。</strong>
+        </p>
+        <p>
+            ■著作権をマークアップ<br>
+            注釈や小さく表示される文字をあらわすタグ
+            <strong class="red">&lt;small&gt;～&lt;/small&gt;</strong><br>
+            著作権・免責事項など慣習的に小さく表示する箇所に使う。<br>
+            文字を小さくしたいだけの場合、CSSで行う。<br>
+            <strong>著作権情報を&lt;small&gt;タグでマークアップ。フッター内にある著作権表示を&lt;small&gt;タグで囲む。</strong>
+        </p>
+        <p>
+            ■記事の投稿日時をマークアップ<br>
+            日時や経過時間をあらわすタグ
+            <strong class="red">&lt;time&gt;～&lt;/time&gt;</strong><br>
+            記事の投稿日など日時が重要な役割を持つ場合には使用するタグ。<br>
+            <a href="./timetag.html" target="_blank">time要素の属性の書き方</a>
+        </p>
+        <a href="./index.html">前に戻る</a>
+        <style>
+            body {
+                font-size: 16px;
+            }
+            .red {
+                color: red;
+                font-size: 23px;
+                font-weight: bold;
+            }
+            .blue {
+                color: rgb(107, 245, 245);
+            }
+            .mark_green {
+                background-color: rgb(74, 180, 106);
+            }
+        </style>
+    </body>
+</html>

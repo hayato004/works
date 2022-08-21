@@ -1,0 +1,27 @@
+box-sizing;border-box;　は、borderやpaddingなどで肉付けした部分が膨れ上がらないようにするプロパティ。
+
+
+displaygridの使い方
+
+カラム数2の場合
+
+display:grid
+
+grid-template-columns: 1fr 80%;　　横配列(カラム)
+
+grid-template-rows: 1fr 80%;		縦配列(ロウ)
+
+grid-template-areas:
+        "header header header"     (カラム数に応じて増える)
+        ". main ."
+        "footer footer footer";    (カラム数分同じのを書くと一つになる)
+　　　　　　　　　　　　　　　　　　.は空白(スペース分)
+　　　　　　　　　　　　　　　　　　grid-gap (疑似マージン）空白を作る。隙間を開ける
+
+↑header main footerの名前は自分が分かれば何でもいい。
+
+grid-area: header        :は子要素にはいらない。
+
+その中でも横並びにしたい要素をdisplay;flexにする。
+
+grid-area: headerなどで指定しないとgrid-template-areasで指定した場所に来ない！！！！

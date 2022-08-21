@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            ブロックボックスとインラインボックス
+        </title>
+    </head>
+    <body>
+        <h1>ブロックボックスとインラインボックス</h1>
+        <p>
+            HTMLタグでマークアップされた要素の多くは<mark class="green">ブロックボックス</mark>と<mark class="red">インラインボックス</mark>の性質を持っている。<br>
+            この性質は、CSSのdisplayプロパティの初期値によって決まる。<br>
+        </p>
+        <p>
+            ■displayプロパティは<strong>ボックスの特性を決めるCSSのプロパティ。</strong><br>
+            ■ボックスモデルに影響するのは主に<strong class="strong_green">ブロックボックス</strong>と<strong class="strong_red">インラインボックス</strong>の2つ。<br>
+            ■<strong>性質を変えたい場合はCSSのdisplayプロパティの値を変更する。</strong>
+        </p>
+        <p>
+            display: block;<strong class="strong_green">ブロックボックス</strong><br>
+            例：&lt;h1~h6&gt; &lt;p&gt; &lt;ul&gt;など<br>
+            <a href="./blockbox_tokusei.html" target="_blank">ブロックボックスの特性について</a><br>
+            display: inline;<strong class="strong_red">インラインボックス</strong><br>
+            例：&lt;e&gt; &lt;em&gt; &lt;img&gt;など<br>
+            <a href="./inlinbox_tokusei.html" target="_blank">インラインボックスの特性について</a>
+        </p>
+        <a href="./index.html">前に戻る</a>
+        <style>
+            body {
+                font-size: 20;
+            }
+            .green {
+                background-color: rgb(118, 207, 118);
+                font-weight: bold;
+            }
+            .red {
+                background-color: red;
+                font-weight: bold;
+            }
+            .strong_green {
+                color: rgb(118, 207, 118);
+                font-size: 23px;
+                font-weight: bold;
+            }
+            .strong_red {
+                color: red;
+                font-size: 23px;
+                font-weight: bold;
+            }
+        </style>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+@charset "UTF-8";
+.green {
+    color: rgb(101, 148, 101);
+}
+.red {
+    color: red;
+}
+.mark_green {
+    background-color: rgb(101, 148, 101);
+}
+.mark_red {
+    background-color: red;
+}

@@ -1,0 +1,23 @@
+@charset "UTF-8";
+body {
+    font-size: 18px;
+}
+.red {
+    color: red;
+    font-size: 23px;
+}
+.mark_green {
+    background-color: rgb(101, 148, 101);
+}
+.mark_red {
+    background-color: red;
+}
+.mark_pink {
+    background-color: rgb(241, 131, 241);
+}
+.mark_yellow {
+    background-color: yellow;
+}
+.mark_purple {
+    background-color: rgb(216, 88, 255);
+}

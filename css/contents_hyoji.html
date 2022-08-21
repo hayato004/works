@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/style.css/styl.css">
+        <meta charset="UTF-8">
+        <title>コンテンツの表示方法その１</title>
+    </head>
+    <body>
+        <h1>コンテンツの表示方法の変更-おさまらないコンテンツにはスクロール-</h1>
+        <p>
+            <strong>要素の高さを指定するプロパティ・・・「 height: ～(単位を伴う数値が入る); 」</strong><br>
+            <strong>収まらないコンテンツの表示方法を指定するプロパティ・・・「overflow: ～(表示方法を表すキーワードが入る);」</strong>
+        </p>
+        <p>
+            縦に長くなってしまったサイドバーなどの項目の縦幅を縮めるためスクロールできるようにする。<br>
+            縦方向のoverflowプロパティの値にscrollを指定すると指定した部分の高さを超える部分はスクロールで見れるようにできる。<br>
+            例:<br>
+            .recentNav ul {<br>
+                height: 240px;<br>
+                overflow: hidden scroll;<br>
+            }
+        </p>
+        <p>
+            <strong>「あふれたコンテンツをどうするか？」を指定するoverflow</strong><br>
+            widthやheightで大きさを指定した要素からコンテンツがあふれてしまうときにどのように表示するかを指定するのがoverflowプロパティである。<br>
+            overflowの書き方・・・「overflow: <strong class="red">hidden(横方向の指定)</strong> <strong class="blue">scroll(縦方向の指定);</strong>」<br>
+        <div>横方向のみを指定 overflow-x: hidden;<br>
+            縦方向のみを指定　overflow-y: scroll;<br>
+        </div>
+        </p>
+        <p class="rei">
+            <主に使用する値一覧><br>
+            visible(※初期値)・・・はみ出して表示される。<br>
+            hidden・・・非表示になる。<br>
+            scroll・・・スクロールできるようになる。<br>
+            auto・・・ブラウザに依存した表示になる。(※多くの場合、スクロールになる)
+        </p>
+        <a href="../index.html">トップに戻る</a>
+    </body>
+
+</html>

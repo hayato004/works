@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <title>idとclassの仕様について</title>
+    </head>
+    <body>
+        <h2><p>&lt;id&gt;属性ページ内に一つだけ存在する。(個別の識別番号の役割を果たすため。番号や名前を変えるならOK)</p></h2>
+        <p>例<br>
+        &lt;p id="g018a1576"&gt;</p>
+        <p>文字の太さを変える場合、&lt;id&gt;タグで指定した後に、半角スペースのあとに、指定する。</p>
+        <p>例<br>
+            &lt;p id="g018a1576" class="bold"&gt;</p>
+        <p>このように、&lt;id&gt;タグを付与した場合、&lt;style&gt;の中の個別の識別番号の始まりは「#」から始める。</p>
+        <h2><p>&lt;class&gt;タグはhtml内で同じ名前で複数つけられる。</p></h2>
+        <p>例<br>
+            &lt;p class="blue_color"&gt;</p>
+            <p>文字の太さを変える場合、&lt;color&gt;タグで指定した後に、半角スペースの後に、bold big_fontを指定する。</p>
+            <p>例<br>
+                &lt;p class="blue_color bold big_font"&gt;</p>
+            <p>このように、&lt;class&gt;タグを付与した場合、&lt;style&gt;の中の個別の識別番号の始まりは「.」から始める。</p>
+        <p>colorは0が黒、fが白。#000000をRGBで分けて考え、最初の#00がR。次 の00に、最後の00にBをおいて考える。</p>
+        <a href="../css/index.html">前に戻る</a>
+        <style>
+            p {
+                /* color: #aaa;0123456789abcdef 16進数*/
+                color: red;
+            }
+            #g018a1576 {
+                color: #00ff00;
+            }
+            .blue_color {
+                color: rgba(0, 0, 255, 0.5);
+            }
+            .bold {
+                font-weight: bold;
+            }
+            .big_font {
+                font-size: 50px;
+            }
+        </style>
+    </body>
+</html>

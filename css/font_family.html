@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>fontについて</title>
+    </head>
+    <body>
+        <p class="midashi">■font-styleについて■</p class="midashi">
+        <strong class="red">&lt;font-family(フォントファミリー)：~；&gt;</strong class="red">
+        <p>カンマで区切って複数のフォントを指定することができる。</p>
+        <p>↓書き方↓</p>
+        <strong class="red">セレクタ{プロパティ名：値；}</strong class="red">
+        <p>サイトの文書全体に指定したいのでセレクタはbodyになる。</p>
+        <p>例：<br>
+        body {<br>
+        <div class="color_green">background-color:#bbf1ef;<br>
+        font-family: "Verdana", "Hiragino Sans", "Meiryo", "sans-serif";<br></div class="color_green">
+        }
+        </p>
+        <p>~font-family：の具体的な書き方について~<br>
+        font-family:フォントファミリ名1(優先度1), フォントファミリ名2(優先度2), 総称ファミリ名(優先度3);<br>
+        ①フォントファミリ名は,（カンマ）で区切り、複数指定できる。<br>
+        ②フォントファミリ名と総称ファミリ名を正しく認識させるためにはフォントファミリ名を'（シングルクォーテーション）または、”（ダブルクォーテーション）で囲む必要がある。<br>
+        ③フォントは先に書いたものが優先される。フォントが無い場合、次に優先度2のフォント、それも無ければ次...という順番で適用される。最後に総称ファミリ名を書くと、<mark class="yellow">最低限の見栄えを担保できる。</mark class="yellow">
+        </p>
+        <p>???総称ファミリ名とは???<br>
+        字形で分類したフォント名。<br>
+        指定されたフォントファミリがどれも存在しなかった場合の代替えフォントになる。</p>
+        <p>???指定するフォント名は何でも良いのか???<br>
+        自分のPCでは問題なく表示されるフォント名を指定したとしても、サイトを見るユーザーのデバイス次第では総称に無いフォントは表示されない。総称ファミリ名<br>を指定する
+        そのため、様々なデバイスでの見方を考慮する必要があり、一般的に<mark class="mark_red">複数のフォントファミリ名</mark class="mark_red">と<mark class="mark_red">総称ファミリ名</mark class="mark_red">を指定する。
+        </p>
+        <p class="midashi">■fontのサイズ変更について■</p class="midashi">
+        <strong class="red">&lt;font-size(フォントサイズ)：~；&gt;</strong class="red">
+        <p>値にはpx(ピクセル)などの数値や、large(大きい)などの大きさを表すキーワードが使われます。</p>
+        <p>例：<br>
+        h1 {<br>
+            <div class="color_green">font-size: 18px;<br> </div class="color_green">
+        }
+        </p>
+        <a href="../css/index.html">前に戻る</a>
+        <style>
+            .red {
+                color: red;
+                font-size: 30px;
+                font-weight: bold;
+            }
+            .midashi {
+                color: red;
+                font-size: 25px;
+            }
+            .color_green {
+                color: green;
+            }
+            .yellow {
+                background-color: #ffff33;
+                color: #000000;
+            }
+            .mark_red {
+                background-color: red;
+                color: #000000;
+            }
+        </style>
+    </body>
+</html>

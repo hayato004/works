@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>様々なセレクタの書き方</title>
+    </head>
+    <body>
+        <h1>様々なセレクタの書き方について</h1>
+        <p>
+            「h1」や「ul」など単体で確定するセレクタを<mark class="mark_green">「タイプセレクタ」</mark>と呼び、「header nav ul」のようなセレクタを<mark class="mark_red">「子孫セレクタ」</mark>と呼びます。
+        </p>
+        <p>
+            <strong class="green">タイプセレクタ</strong><br>
+            <strong>ul&#123;～&#125;</strong><br>
+            ■すべてのul要素に同じスタイルが適用される
+        </p>
+        <p>
+            <strong class="red">子孫セレクタ</strong><br>
+            <strong>header nav ul&#123;～&#125;</strong><br>
+            ■「header内のnav内のul要素のみ」という意味<br>
+            ■特定のul要素のみにスタイルが適用される
+        </p>
+        <div>ul要素が複数あり、それぞれに違うCSSを適用したい場合は子孫セレクタを使う。</div>
+        <p>
+            他にもある便利なセレクタ↓<br>
+            <strong>
+                タイプセレクタ<br>
+                A&#123;～&#125;
+            </strong><br>
+            ■<br>
+        </p>
+        <p>
+            <strong>
+                子孫セレクタ<br>
+                A B&#123;～&#125;
+            </strong><br>
+            ■<br>
+        </p>
+        <p>
+            <strong>
+                子セレクタ<br>
+                A&gt;B&#123;～&#125;
+            </strong><br>
+            ■<br>
+        </p>
+        <p>
+            <strong>
+                疑似クラス<br>
+                A:hover&#123;～&#125;
+            </strong><br>
+            ■カーソルを当てた時にスタイルを変化させる。<br>
+            アニメーションなどもつけることが可能。     
+        </p>
+        <p>
+            <strong>
+                隣接セレクタ<br>
+                A&#043;B&#123;～&#125;
+            </strong><br>
+            ■<br>
+        </p>
+        <p>
+            <strong>
+                属性セレクタ<br>
+                A&#091;C&#093;&#123;～&#125;
+            </strong><br>
+            ■<br>
+        </p>
+        <p>
+            <strong>
+                classセレクタ<br>
+                &#046;class名&#123;～&#125;
+            </strong><br>
+            ■<br>
+        </p>
+        <p>
+            <strong>
+                idセレクタ<br>
+                &#035;id名&#123;～&#125;
+            </strong><br>
+            ■<br>
+        </p>
+        <p>
+            <strong>
+                マルチセレクタ<br>
+                ,(カンマ)で区切る
+            </strong><br>
+            ■<br>
+        </p>
+        <p>
+            <strong>
+                番号指定セレクタ<br>
+                li:nth-child(値を入力)　oddは奇数 evenは偶数<br>
+            </strong><br>
+        </p>
+        <p>
+            <strong>
+                ラストチルド<br>
+                last-child&#123;～&#125;
+            </strong>
+            ■ 例：うえから2こだけ、変えたい場合は,で区切らず、li:nth-child(1),li:nth-child(2)で区切る。<br>
+            u > li:nth-child (すべてのタグにかけるのではなく、)<br>
+        </p>
+        <style>
+            .mark_green {
+                background-color: rgba(28, 129, 28, 0.753);
+            }
+            .mark_red {
+                background-color: red;
+            }
+            .green {
+                color: green;
+                font-weight: bold;
+            }
+            .red {
+                color: red;
+                font-weight: bold;
+            }
+        </style>
+    </body>
+</html>
